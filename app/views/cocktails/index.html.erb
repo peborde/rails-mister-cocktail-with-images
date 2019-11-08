@@ -3,8 +3,7 @@
 
   <% @cocktails.each do |cocktail| %>
     <div class="cocktail">
-      <h3><%= cocktail.name %></h3>
-      <%= link_to 'edit the cocktail',cocktail_path %>
+      <h3><%= cocktail.name %></h3> <%= link_to 'Edit your cocktail', cocktail_path(cocktail) %>
     </div>
   <% end %>
 
